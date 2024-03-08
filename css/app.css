@@ -9,7 +9,8 @@
   nav{
     background-color: #F8F8F7;
     padding: 1% 8%;
-  
+    position: sticky;
+    top: 0;
   }
   nav ul{
     width: 100%;
