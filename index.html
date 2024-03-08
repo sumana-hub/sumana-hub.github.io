@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="Amazing graphic designs and great websites." />
+    <title> Sumana Dhital - Home</title>
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <body>
+    <!--NAV-BAR-->
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="#about-me">About</a></li>
+        <!--<li><a href="#skills">Skills</a></li>
+        <li><a href="#mywork">My Work</a></li>-->
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Wiki</a></li>
+      </ul>
+      <ul>
+        <li><img src="assets/images/logo.png" width=100 height="80"></li>
+        <li class="hideOnMobile"><a href="#about-me">About</a></li>
+       <!-- <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+        <li class="hideOnMobile"><a href="#mywork">My Works</a></li>-->
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li class="hideOnMobile"><a href="#">Wiki</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+    <!--MAIN-PAGE-->
+    <div class="background-main">
+      <img id="main-img" src="assets/images/sumana.png" alt >
+    </div>
+    
+    <!--ABOUT-->
+    <div id="about-me" class="background-about">
+      <div class="content">  
+        <h1 id="about">About Me</h1>
+        <div class="paragraph-about">
+          <p>I'm an aspiring web developer and designer with a passion for creating beautiful and functional websites. I'm a star gazer, dreamer, and believer in the power of technology to make a positive impact on the world.</p>
+          <p>In my free time, I love to embark on adventures and explore the great outdoors. Whether it's hiking in the mountains, camping under the stars, or simply going for a stroll in nature, I find joy in every moment spent outside.</p>
+          <p>Photography is another one of my passions. I love capturing the beauty of the world around me through my lens and sharing those moments with others.</p>
+          <p>I'm an adventurous spirit who enjoys pushing my limits and seeking out new experiences. Whether it's soaring through the skies while paragliding or navigating thrilling rapids while rafting, I'm always up for a challenge.</p>
+          <p>My future plans include honing my skills as a web developer and designer, continuously learning and growing in the field, and using my creativity to build innovative and impactful projects.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!--CONTACT-->
+    <div id="contact" class="background-contact">
+      <div class="contact-content">  
+        <div class="details-contact">
+          <img id="img-contact" src="assets/images/logo.png" alt="logo">
+          <a href="https://www.linkedin.com/in/sumana-dhital-9a489a260/"><img class="social-icons"  src="assets/images/social.png"></a>
+          <a href="https://github.com/sumana-hub"><img class="social-icons" src="assets/images/github-logo.png"></a>
+          <a href="https://triosdevelopers.com/~Sumana.Dhital/"><img class="social-icons" src="assets/images/web.png"></a>
+          <a href="mailto:sumana.dhital@trios"><img class="social-icons" src="assets/images/email.png"></a>
+        </div>
+        <div class="image-contact">
+          <img src="assets/images/AvatarMaker.png">
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="copyright">
+      <p id="copyright-text"></p>
+  </div>
+  
+
+    <script src="js/app.js"></script>
+</body>
+</html>
