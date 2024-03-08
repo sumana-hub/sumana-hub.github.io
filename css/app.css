@@ -86,23 +86,29 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   #main-img {
     max-width: 100%;
     height: auto;
   }
-  
-  #about {
+  @media screen and (max-width: 768px) {
+    #main-img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  /* ABOUT */
+  .section-heading {
     text-align: left;
     color: #fff;
     font-size: 50px;
-    padding-top: 5%;
+    padding-top: 7%;
   }
   .paragraph-about {
-    margin-top: 3%;
+    margin-top: 2%;
     padding: 30px;
     line-height: 1.6;
     text-align: left;
@@ -118,14 +124,83 @@
     width: 100%;
     height: 100vh; 
     padding-left: 7%;
-    display: flex;
-    align-items: center;
+    
   }
   .content {
-    max-width: 800px;
+    max-width: 80%;
     padding: 20px;
   }
-  
+
+  /*SKILLS*/
+  .background-skills {
+    background-image: url('/assets/images/image9.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    padding-left: 7%;
+  }
+  .details-skills {
+    display: flex;
+    justify-content: center;
+  }
+  .skills-icons {
+    width: 50px;
+    height: 50px;
+    padding-left: 14px;
+    
+  }
+
+  .content-skills {
+    max-width: 80%;
+    padding-bottom: 5%;
+  }
+
+  hr {
+    margin: 10%;
+  }
+
+  .skills-heading {
+    text-align: left;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 1%;
+  }
+
+  /* MY WORKS */
+  .background-myworks {
+    background-image: url('/assets/images/image8.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    padding-left: 7%;
+  }
+
+  .content-myworks {
+    max-width: 80%;
+    padding-bottom: 5%;
+  }
+
+  hr {
+    margin: 5%;
+  }
+
+  .myworks-heading {
+    text-align: left;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 5%;
+  }
+
+  .details-myworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   /*CONTACT*/
   .background-contact {
     background-color: #F8F8F7;
@@ -165,4 +240,11 @@
     color: #fff;
     padding: 2%;
     text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .content, .content-skills, .content-myworks{
+      max-width: 80%;
+      padding: 0;
+      margin: 0;
+    }
   }
