@@ -33,6 +33,7 @@
   }
   nav a:hover{
     background-color: #E94C2D;
+    color: #fff;
   }
   nav li:first-child{
     margin-right: auto;
@@ -43,9 +44,7 @@
     right: 0;
     height: 100vh;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #184C4F;
     list-style: none;
     display: none;
     flex-direction: column;
@@ -58,7 +57,7 @@
   }
   .sidebar a{
     width: 100%;
-    color: #184C4F;
+    color: #fff;
     font-size: 30px;
   }
   .menu-button{
@@ -79,14 +78,6 @@
   }
   
   /* Main */
-  .background-main {
-    background-color: #F8F8F7;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh; 
-  }
   #main-img {
     max-width: 100%;
     height: auto;
@@ -122,15 +113,28 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     padding-left: 7%;
-    
   }
+
   .content {
     max-width: 80%;
     padding: 20px;
   }
 
+@media screen and (max-width: 768px) {
+  .background-about {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    }
+
+  .section-heading{
+    text-align: center;
+  }
+}
   /*SKILLS*/
   .background-skills {
     background-image: url('/assets/images/image9.jpg');
@@ -161,9 +165,35 @@
     text-align: left;
     color: #fff;
     font-size: 50px;
-    padding-top: 1%;
+    padding-top: 7%;
   }
 
+@media screen and (max-width: 768px) {
+  .background-skills {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+  }
+
+  .skills-heading{
+    text-align: center;
+    padding-top: 7%;
+  }
+  
+  .paragraph-about {
+    margin-bottom: 7%;
+    padding: 10%;
+    text-align: center;
+  }
+  .skills-icons {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+}
+    
   /* MY WORKS */
   .background-myworks {
     background-image: url('/assets/images/image8.jpg');
@@ -188,13 +218,27 @@
     text-align: left;
     color: #fff;
     font-size: 50px;
-    padding-top: 5%;
+    padding-top: 7%;
   }
 
   .details-myworks {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .background-myworks {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    }
+
+  .myworks-heading{
+    text-align: center;
+    padding-top: 7%;
+  }
 }
 
   /*CONTACT*/
